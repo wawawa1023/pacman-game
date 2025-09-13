@@ -15,17 +15,18 @@ JavaScriptの学習を目的としたパックマン風ブラウザゲームで�
 
 ## 📁 プロジェクト構成
 
+```plaintext
 pacman-game/
-├── index.html # メインHTMLファイル
+├── index.html         # メインHTMLファイル
 ├── css/
-│ └── style.css # スタイル定義
+│   └── style.css      # スタイル定義
 ├── js/
-│ ├── main.js # メインゲームロジック
-│ ├── player.js # プレイヤー関連の処理
-│ ├── ghost.js # ゴースト関連の処理
-│ ├── map.js # マップ関連の処理
-│ └── utils.js # ユーティリティ関数
-└── README.md # このファイル
+│   ├── main.js        # メインゲームロジック
+│   ├── player.js      # プレイヤー関連の処理
+│   ├── ghost.js       # ゴースト関連の処理
+│   ├── map.js         # マップ関連の処理
+│   └── utils.js       # ユーティリティ関数
+└── REA
 
 ## 🎯 操作方法
 
