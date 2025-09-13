@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パックマン風ゲーム</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>パックマン風ゲーム</h1>
+            <div class="game-info">
+                <div class="info-item">
+                    <span>スコア:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span>残りドット:</span>
+                    <span id="dotsLeft">0</span>
+                </div>
+                <div class="info-item">
+                    <span>ライフ:</span>
+                    <span id="lives">3</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="game-main">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <div class="game-over-screen" id="gameOverScreen" style="display: none;">
+                <div class="game-over-content">
+                    <h2 id="gameOverTitle">ゲームオーバー</h2>
+                    <p id="gameOverMessage">スコア: <span id="finalScore">0</span></p>
+                    <button id="restartButton" class="btn btn-primary">もう一度プレイ</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="game-footer">
+            <div class="controls-info">
+                <p>矢印キーで移動 | 全てのドットを集めてクリア！</p>
+            </div>
+            <div class="game-controls">
+                <button id="pauseButton" class="btn btn-secondary">一時停止</button>
+                <button id="resetButton" class="btn btn-secondary">リスタート</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="js/utils.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
