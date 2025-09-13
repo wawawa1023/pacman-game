@@ -13,6 +13,10 @@ class Player {
         this.direction = DIRECTIONS.RIGHT;
         this.nextDirection = null;
         
+        // 移動タイミング制御
+        this.lastMoveTime = 0;
+        this.moveInterval = CONFIG.GAME_SPEED; // 移動間隔（ミリ秒）
+        
         // アニメーション用
         this.animationTime = 0;
         this.mouthOpen = true;
@@ -30,8 +34,12 @@ class Player {
         // 入力処理
         this.handleInput();
         
-        // 移動処理
-        this.move();
+        // 移動タイミング制御
+        this.lastMoveTime += deltaTime;
+        if (this.lastMoveTime >= this.moveInterval) {
+            this.move();
+            this.lastMoveTime = 0;
+        }
         
         // アニメーション更新
         this.updateAnimation(deltaTime);

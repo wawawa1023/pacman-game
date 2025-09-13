@@ -3,8 +3,8 @@ const CONFIG = {
     CELL_SIZE: 20,
     CANVAS_WIDTH: 600,
     CANVAS_HEIGHT: 400,
-    GAME_SPEED: 200, // ミリ秒
-    GHOST_SPEED: 250,
+    GAME_SPEED: 300, // ミリ秒（プレイヤーの移動間隔）
+    GHOST_SPEED: 350, // ミリ秒（ゴーストの移動間隔）
 
     // スコア設定
     SCORES: {
